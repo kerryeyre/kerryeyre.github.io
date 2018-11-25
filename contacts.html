@@ -6,47 +6,7 @@
 <link rel="stylesheet" type="text/css"  href="css/style.css"/>
 
 <script type="text/javascript">
-function validate()
-{
-	var x=document.forms["contact"]["youremail"].value
-	var atpos=x.indexOf("@");
-    var dotpos=x.lastIndexOf(".");
-	
-	if(document.contact.yourname.value=='')
-	{
-		alert("Please enter your name");	
-		document.contact.yourname.focus();
-		return false;
-	}
-	else if(document.contact.yourtelno.value=='')
-	{
-		alert("Please enter telephone number");	
-		document.contact.yourtelno.focus();
-		return false;
-	}
-	else if(document.contact.youremail.value=='')
-	{
-		alert("Please enter email address");	
-		document.contact.youremail.focus();
-		return false;
-	}
-	else if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
-    {
-		alert("Please enter a valid email address");
-		document.contact.youremail.focus();
-		return false;
-    }
-	else if(document.contact.message.value=='')
-	{
-		alert("Please enter your message");	
-		document.contact.message.focus();
-		return false;
-	}
-	else
-	{
-		return true;
-	}
-}
+
 </script>
 
 </head>
@@ -65,7 +25,7 @@ function validate()
 <ul class="nbar">
 <li class="first active"><a href="index.html">Home</a></li>
 <li><a href="testimonial.html">Testimonials</a></li>
-<li><a href="contacts.html">Contact</a></li>
+<li><a href="contacts.php">Contact</a></li>
 <!--<li><a href="#">Our Service</a></li>
 <li><a href="#">Our Clients</a></li>
 <li><a href="#">Downloads</a></li>
@@ -75,36 +35,7 @@ function validate()
 </div>
 <div class="container">
 
-<p class="head">Contact Kerry</p>
-<p class="headsmall">Telephone : 00353 878 154 362</p>
-<p class="headsmall">E-Mail : <a href="mailto:kerry@kerryeyrecleaning.com">kerry@kerryeyrecleaning.com</a></p>
-<form id="contact" name="contact" method="post" onsubmit="return validate();">
-  <table width="600" border="0" cellspacing="2" cellpadding="2">
-    <tr>
-      <td colspan="2"><span style="color:#F00"></span></td>
-    </tr> 
-    <tr>
-      <td><p>Your name</p></td>
-      <td><input type="text" name="yourname" id="yourname" /></td>
-    </tr>
-    <tr>
-      <td><p>Your telephone number</p></td>
-      <td><input type="text" name="yourtelno" id="yourtelno" /></td>
-    </tr>
-    <tr>
-      <td><p>Your email address</p></td>
-      <td><input type="text" name="youremail" id="youremail" /></td>
-    </tr>
-    <tr>
-      <td><p>Your message</p></td>
-      <td><textarea name="message" id="message" cols="45" rows="5"></textarea></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><input type="submit" name="button" id="button" value="Submit" /> <input type="reset" name="button2" id="button2" value="Reset" /></td>
-    </tr>
-  </table>
-</form>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzTCallgRfiqda-_5hFWJKCweAM6Q4H3QGStHGoEyGSTNSTg/viewform?embedded=true" width="640" height="892" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 <p>&nbsp;</p>
 
 
@@ -114,7 +45,7 @@ function validate()
 </div>
 </div>
 
- 
+
 </div>
 </div>
 <div class="footer">
