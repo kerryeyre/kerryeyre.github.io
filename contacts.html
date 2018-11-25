@@ -5,49 +5,6 @@
 <title>KerryEyre Cleaning</title>
 <link rel="stylesheet" type="text/css"  href="css/style.css"/>
 
-<script type="text/javascript">
-function validate()
-{
-	var x=document.forms["contact"]["youremail"].value
-	var atpos=x.indexOf("@");
-    var dotpos=x.lastIndexOf(".");
-	
-	if(document.contact.yourname.value=='')
-	{
-		alert("Please enter your name");	
-		document.contact.yourname.focus();
-		return false;
-	}
-	else if(document.contact.yourtelno.value=='')
-	{
-		alert("Please enter telephone number");	
-		document.contact.yourtelno.focus();
-		return false;
-	}
-	else if(document.contact.youremail.value=='')
-	{
-		alert("Please enter email address");	
-		document.contact.youremail.focus();
-		return false;
-	}
-	else if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
-    {
-		alert("Please enter a valid email address");
-		document.contact.youremail.focus();
-		return false;
-    }
-	else if(document.contact.message.value=='')
-	{
-		alert("Please enter your message");	
-		document.contact.message.focus();
-		return false;
-	}
-	else
-	{
-		return true;
-	}
-}
-</script>
 
 </head>
 
